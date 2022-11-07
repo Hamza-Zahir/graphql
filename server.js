@@ -11,15 +11,6 @@ const { loadFilesSync } = require("@graphql-tools/load-files")
 const typesArray = loadFilesSync('**/*', { extensions: ['graphql'], });
 const resolversArray = loadFilesSync(path.join(__dirname, '**/*.resolvers.js'));
 
-// const path = require('path');
-// const express = require('express');
-
-
-// const { loadFilesSync } = require('@graphql-tools/load-files');
-// const { makeExecutableSchema } = require('@graphql-tools/schema');
-
-// const typesArray = loadFilesSync('**/*', { extensions: ['graphql'], });
-// const resolversArray = loadFilesSync(path.join(__dirname, '**/*.resolvers.js'));
 
 async function startApolloServer() {
   const app = express();
